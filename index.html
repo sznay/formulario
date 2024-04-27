@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compactible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULÁRIO</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+
+    <main class="apresentacao__pagina">
+      <form action="" class="apresentacao__pagina__formulario">
+        <h1 class="apresentacao__pagina__formulario_titulo">
+          PREENCHA COM SEUS DADOS
+        </h1>
+        <section class="apresentacao__pagina__formulario__conteudo">
+          <h3 class="subtitulo__pag">DADOS PESSOAIS</h3>
+          <div class="formulario__input">
+            <label for="firstname">NOME</label>
+            <input
+              id="dados__pessoais"
+              type="text"
+              name="firstname"
+              placeholder="Digite seu nome completo"
+              required
+            />
+          </div>
+
+          <div class="formulario__input__group">
+            <div class="formulario__input md-6 md-5 md-3">
+              <label for="Start">DATA DE NASCIMENTO</label>
+              <input
+                id="data__nascimento"
+                type="date"
+                name="trip-start"
+                value="2002-11-18"
+                min="1995-05-05"
+                max="2006-05-05"
+                required
+              />
+            </div>
+
+            <div class="formulario__input md-6 md-5 md-3">
+              <label for="SEX">GÊNERO</label>
+
+              <div class="formulario__input__radio">
+                <input
+                  type="radio"
+                  id="feminino"
+                  name="sexo"
+                  value="feminino"
+                />
+                <label for="feminino">Feminino</label>
+
+                <input
+                  type="radio"
+                  id="masculino"
+                  name="sexo"
+                  value="masculino"
+                />
+                <label for="masculino">Masculino</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="formulario__input__group">
+            <div class="formulario__input md-6  md-5 md-3">
+              <label for="CPF">CPF</label>
+              <input
+                id="CPF"
+                type="text"
+                name="CPF"
+                placeholder="xxx.xxx.xxx-xx"
+                required
+              />
+            </div>
+
+            <div class="formulario__input md-6 md-5 md-3">
+              <label for="education">ESCOLARIDADE</label>
+              <select name="" id="escolaridade">
+                <option value="">Ensino Fundamental</option>
+                <option value="">Ensino Médio</option>
+                <option value="">Graduação</option>
+                <option value="">Pós-graduação</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="formulario__input__group">
+            <div class="formulario__input md-8 md-7">
+              <label for="city">CIDADE</label>
+              <input
+                id="cidade"
+                type="text"
+                name="city"
+                placeholder="Ex: Av.General Arthur Carvalho"
+                required
+              />
+            </div>
+
+            <div class="formulario__input md-2">
+              <label for="cep">CEP</label>
+              <input
+                id="cep"
+                type="text"
+                name="cpf"
+                placeholder="xxxxx-xxx"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="formulario__input">
+            <label for="complement">COMPLEMENTO</label>
+            <input
+              id="complemento"
+              type="text"
+              name="complement"
+              placeholder="Ex: Av.General Arthur Carvalho"
+              required
+            />
+          </div>
+
+          <div class="formulario__input__group">
+            <div class="formulario__input md-4">
+              <label for="neighborhood">BAIRRO</label>
+              <input
+                id="bairro"
+                type="text"
+                name="neighborhood"
+                placeholder="Ex: Turu"
+                required
+              />
+            </div>
+            <div class="formulario__input md-2">
+              <label for="Number">Nº</label>
+              <input
+                id="numero"
+                type="text"
+                name="Number"
+                placeholder="Ex: 304"
+                required
+              />
+            </div>
+            <div class="formulario__input md-4">
+              <label for="contato">CONTATO</label>
+              <input
+                id="contato"
+                type="tel"
+                name="contato"
+                placeholder="Ex: (99) 98467-4250"
+                required
+              />
+            </div>
+          </div>
+          <div class="formulario__input__group">
+            <div class="formulario__input md-6 md-5">
+              <label>Comprovante de Endereço</label>
+              <label class="upload" for="comprovante__endereco">
+                <span class="material-symbols-outlined"> upload </span>
+                <p>Enviar arquivo: </p>
+                <input class="invisible" type="file" id="comprovante__endereco"> 
+              </label>
+            </div>
+            <div class="formulario__input md-6 md-5">
+              <label>Comprovante de escolaridade</label>
+              <label class="upload" for="comprovante__escolaridade">
+                <span class="material-symbols-outlined"> upload </span>
+                <p>Enviar arquivo: </p>
+                <input class="invisible" type="file" id="comprovante__escolaridade"> 
+              </label>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="apresentacao__pagina__formulario__conteudo">
+          <h3 class="subtitulo__pag">INFORMAÇÕES DE LOGIN</h3>
+
+          <div class="formulario__input">
+            <label for="email">EMAIL</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Escreva seu email"
+              size="30"
+            />
+          </div>
+
+          <div class="formulario__input">
+            <label for="confirma_email">CONFIRMAR EMAIL</label>
+            <input
+              class="espaco__preencher"
+              id="confirma_email"
+              type="email"
+              name="confirma_email"
+              placeholder="Confirme seu email"
+              size="30"
+            />
+          </div>
+
+          <div class="formulario__input__group">
+            <div class="formulario__input md-6 md-5">
+              <label for="pass">SENHA:</label>
+              <input
+                type="password"
+                id="senha"
+                name="password"
+                minlength="8"
+                required
+              />
+            </div>
+            <div class="formulario__input md-6 md-5">
+              <label for="email">CONFIRMAR SENHA</label>
+              <input
+                id="confirma_senha"
+                type="password"
+                name="confirma_password"
+                size="30"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="apresentacao__pagina__formulario__botao">
+          <button class="botao__formulario" type="submit">SALVAR E ENVIAR</button>
+        </div>
+        <div>
+          <a href="#" class="botao-voltar">Voltar</a>
+        </div>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
